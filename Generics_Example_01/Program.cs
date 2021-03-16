@@ -9,7 +9,7 @@ namespace Generics_Example_01
         {
             try
             {
-                PrintService print = new PrintService();
+                PrintService<string> print = new PrintService<string>();
 
                 Console.Write("How many values? : ");
                 int values = int.Parse(Console.ReadLine());
@@ -21,6 +21,8 @@ namespace Generics_Example_01
                 }
 
                 print.Print();
+
+                
             }
             catch (InvalidOperationException ex)
             {
