@@ -17,7 +17,7 @@ namespace Generics_Example_01
 
                 for (int i = 0; i < values; i++)
                 {
-                    print.AddValue(int.Parse(Console.ReadLine()));
+                    print.AddValue(Console.ReadLine());
                 }
 
                 print.Print();
